@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ScryfallAPI.net</id>
+    <version>1.1.0</version>
+    <title>ScryfallAPI.NET</title>
+    <authors>Thymon Arens</authors>
+    <owners>Thymon Arens</owners>
+    <licenseUrl>https://github.com/ThymonA/ScryfallAPI.net/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ThymonA/ScryfallAPI.net/</projectUrl>
+    <iconUrl>https://avatars.githubusercontent.com/u/9989505</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>ScryfallAPI is a client library that provides an easy way to interact with the Scryfall API.</description>
+    <releaseNotes>Added support for .NETStandard 1.1 / 2.0 and .NET Framework 4.5 / 4.6</releaseNotes>
+    <copyright>Copyright 2018 Thymon Arens Licensed under the MIT License</copyright>
+    <tags>ScryfallAPI.NET Scryfall Scryfall-API</tags>
+  </metadata>
+</package>

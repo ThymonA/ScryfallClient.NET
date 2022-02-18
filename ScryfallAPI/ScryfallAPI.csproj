@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageId>ScryfallAPI.NET</PackageId>
+    <Authors>Thymon Arens</Authors>
+    <Company>Thymon Arens</Company>
+    <Title>ScryfallAPI.NET</Title>
+    <Product>ScryfallAPI.NET</Product>
+    <Description>ScryfallAPI is a client library that provides an easy way to interact with the Scryfall API.</Description>
+    <Copyright>Copyright 2018 Thymon Arens Licensed under the MIT License</Copyright>
+    <PackageLicenseUrl>https://github.com/ThymonA/ScryfallAPI.net/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ThymonA/ScryfallAPI.net</PackageProjectUrl>
+    <PackageIconUrl>https://avatars.githubusercontent.com/u/9989505</PackageIconUrl>
+    <RepositoryUrl>https://github.com/ThymonA/ScryfallAPI.net</RepositoryUrl>
+    <PackageTags>ScryfallAPI.NET</PackageTags>
+    <Version>1.1.0</Version>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <PackageReleaseNotes>Added support for .NETStandard 1.1 / 2.0 and .NET Framework 4.5 / 4.6</PackageReleaseNotes>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45' OR '$(TargetFramework)' == 'net46'">
+    <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="SimpleInjector" Version="5.3.3" />
+  </ItemGroup>
+</Project>
